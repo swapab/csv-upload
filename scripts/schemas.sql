@@ -1,0 +1,6 @@
+CREATE USER IF NOT EXISTS 'root'@'%' IDENTIFIED BY '';
+CREATE SCHEMA IF NOT EXISTS csv_upload_dev;
+CREATE SCHEMA IF NOT EXISTS csv_upload_test;
+GRANT ALL PRIVILEGES ON csv_upload_dev.* TO 'root'@'%';
+GRANT ALL PRIVILEGES ON csv_upload_test.* TO 'root'@'%';
+FLUSH PRIVILEGES;
